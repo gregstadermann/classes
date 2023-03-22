@@ -3,7 +3,7 @@
 const { Broadcast: B, Heal, SkillType } = require('ranvier');
 
 const healPercent = 300;
-const energyCost = 40;
+const manaCost = 40;
 
 function getHeal(player) {
   return player.getAttribute('intellect') * (healPercent / 100);
@@ -19,8 +19,8 @@ module.exports = {
   initiatesCombat: false,
   targetSelf: true,
   resource: {
-    attribute: 'energy',
-    cost: energyCost,
+    attribute: 'mana',
+    cost: manaCost,
   },
   cooldown: 10,
 
