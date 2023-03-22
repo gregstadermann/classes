@@ -6,7 +6,7 @@ const damagePercent = 400;
 const manaCost = 80;
 
 function getDamage(player) {
-    return player.getAttribute('intellect') * (damagePercent / 100);
+    return player.getAttribute('intelligence') * (damagePercent / 100);
 }
 
 /**

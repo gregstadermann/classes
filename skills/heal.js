@@ -6,7 +6,7 @@ const healPercent = 300;
 const manaCost = 40;
 
 function getHeal(player) {
-  return player.getAttribute('intellect') * (healPercent / 100);
+  return player.getAttribute('intelligence') * (healPercent / 100);
 }
 
 /**

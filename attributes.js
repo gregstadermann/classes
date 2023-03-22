@@ -5,9 +5,9 @@ module.exports = [
     name: 'mana',
     base: 100,
     formula: {
-      requires: ['intellect'],
-      fn: function (character, mana, intellect) {
-        return mana + (intellect * 10);
+      requires: ['intelligence'],
+      fn: function (character, mana, intelligence) {
+        return mana + (intelligence * 10);
       }
     },
   },

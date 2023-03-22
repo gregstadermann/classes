@@ -6,7 +6,7 @@ const damagePercent = 100;
 const manaCost = 80;
 
 function getDamage(player) {
-  return player.getAttribute('intellect') * (damagePercent / 100);
+  return player.getAttribute('intelligence') * (damagePercent / 100);
 }
 
 /**
@@ -37,6 +37,6 @@ module.exports = {
   },
 
   info: (player) => {
-    return `Hurl a magical fireball at your target dealing ${damagePercent}% of your Intellect as Fire damage.`;
+    return `Hurl a magical fireball at your target dealing ${damagePercent}% of your Intelligence as Fire damage.`;
   }
 };
