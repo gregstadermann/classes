@@ -10,14 +10,14 @@
 module.exports = {
   name: 'Warrior',
   description: '',
-
+  manaStat: 'aura',
+  primeStats: ['strength', 'constitution'],
   abilityTable: {
     3: { skills: ['rend'] },
     5: { skills: ['lunge'] },
     7: { skills: ['shieldblock'] },
    10: { skills: ['secondwind'] },
   },
-
   skills: {
     "brawling": {
       "name": "Brawling",
@@ -165,8 +165,6 @@ module.exports = {
       "ranks": 0
     }
   },
-
-
   setupPlayer: (state, player) => {
     const energy = state.AttributeFactory.create('energy', 100);
     player.addAttribute(energy);

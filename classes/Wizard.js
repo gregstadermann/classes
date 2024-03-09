@@ -6,8 +6,10 @@
 module.exports = {
   name: 'Wizard',
   description: '',
+  manaStat: 'aura',
+  primeStats: ['aura', 'logic'],
   abilityTable: {
-    3: { spells: ['haste'] },
+    1: { spells: ['haste'] },
     5: { spells: ['fireball'] },
     7: { spells: ['heal'] },
     10: { spells: ['lightning'] },

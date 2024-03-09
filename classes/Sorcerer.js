@@ -10,7 +10,8 @@
 module.exports = {
     name: 'Sorcerer',
     description: '',
-
+    manaStat: 'aura',
+    primeStats: ['aura', 'wisdom'],
     abilityTable: {
         3: { skills: ['rend'] },
         5: { skills: ['lunge'] },

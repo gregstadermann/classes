@@ -10,7 +10,8 @@
 module.exports = {
     name: 'Rogue',
     description: '',
-
+    manaStat: 'aura',
+    primeStats: ['reflexes', 'dexterity'],
     abilityTable: {
         3: { skills: ['rend'] },
         5: { skills: ['lunge'] },

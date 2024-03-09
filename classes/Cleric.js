@@ -10,7 +10,8 @@
 module.exports = {
     name: 'Cleric',
     description: '',
-
+    manaStat: 'wisdom',
+    primeStats: ['logic', 'wisdom'],
     abilityTable: {
         3: { skills: ['rend'] },
         5: { skills: ['lunge'] },

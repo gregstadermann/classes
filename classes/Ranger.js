@@ -10,7 +10,8 @@
 module.exports = {
     name: 'Ranger',
     description: '',
-
+    manaStat: 'wisdom',
+    primeStats: ['wisdom', 'dexterity'],
     abilityTable: {
         3: { skills: ['rend'] },
         5: { skills: ['lunge'] },

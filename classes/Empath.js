@@ -10,7 +10,8 @@
 module.exports = {
     name: 'Empath',
     description: '',
-
+    manaStat: 'wisdom',
+    primeStats: ['aura', 'wisdom'],
     abilityTable: {
         3: { skills: ['rend'] },
         5: { skills: ['lunge'] },

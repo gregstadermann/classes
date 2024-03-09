@@ -3,7 +3,8 @@
 module.exports = {
   name: 'Paladin',
   description: '',
-
+  manaStat: 'wisdom',
+  primeStats: ['wisdom', 'strength'],
   abilityTable: {
     3: { skills: ['judge'] },
     5: { skills: ['plea'] },

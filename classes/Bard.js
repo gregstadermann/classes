@@ -10,7 +10,8 @@
 module.exports = {
     name: 'Bard',
     description: '',
-
+    manaStat: 'aura',
+    primeStats: ['charisma', 'aura'],
     abilityTable: {
         3: { skills: ['rend'] },
         5: { skills: ['lunge'] },
