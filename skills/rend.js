@@ -11,7 +11,7 @@ const tickInterval = 3;
 const damagePercent = 400;
 
 const totalDamage = player => {
-  return Combat.calculateWeaponDamage(player) * (damagePercent / 100);
+  return Combat.getWeaponDamage(player) * (damagePercent / 100);
 };
 
 
