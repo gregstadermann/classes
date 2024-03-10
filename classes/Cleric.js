@@ -144,18 +144,18 @@ module.exports = {
             "cost":[0,2],
             "ranks": 0
         },
-        "major_elemental": {
-            "name": "Major Elemental",
+        "cleric_base": {
+            "name": "Cleric Base",
             "cost":[0,8],
             "ranks": 0
         },
-        "minor_elemental": {
-            "name": "Minor Elemental",
+        "minor_spiritual": {
+            "name": "Minor Spiritual",
             "cost":[0,8],
             "ranks": 0
         },
-        "wizard_base": {
-            "name": "Wizard Base",
+        "major_spiritual": {
+            "name": "Major Spiritual",
             "cost":[0,8],
             "ranks": 0
         },
