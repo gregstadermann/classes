@@ -22,7 +22,7 @@ module.exports = {
     effect.skill = this;
     effect.attacker = player;
 
-    const amount = Combat.calculateWeaponDamage(player) * (damagePercent / 100);
+    const amount = Combat.calculateWeaponDamage(player, undefined, state) * (damagePercent / 100);
     const damage = new Damage('health', amount, player, this, {
       type: 'holy',
     });

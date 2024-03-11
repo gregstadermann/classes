@@ -19,10 +19,10 @@ module.exports = {
 
   run: state => function (args, player, target) {
     if (!player.equipment.has('wield')) {
-      return Broadcast.sayAt(player, "You don't have a weapon equipped.");
+      return Broadcast.sayAt(player, "You don't have a weapons equipped.");
     }
 
-    const amount = Combat.calculateWeaponDamage(player) * (damagePercent / 100);
+    const amount = Combat.calculateWeaponDamage(player, undefined, state) * (damagePercent / 100);
 
     const damage = new Damage('health', amount, player, this, {
       type: 'holy',

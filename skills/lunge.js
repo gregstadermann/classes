@@ -7,7 +7,7 @@ const damagePercent = 250;
 const energyCost = 20;
 
 function getDamage(player) {
-  return Combat.calculateWeaponDamage(player) * (damagePercent / 100);
+  return Combat.calculateWeaponDamage(player, undefined, state) * (damagePercent / 100);
 }
 
 /**

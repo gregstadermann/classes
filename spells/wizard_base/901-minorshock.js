@@ -21,7 +21,7 @@ module.exports = {
     cooldown: 3,
 
     run: state => function (args, player, target) {
-        const amount = Combat.calculateWeaponDamage(player) * (damagePercent / 100);
+        const amount = Combat.calculateWeaponDamage(player, undefined, state) * (damagePercent / 100);
 
         const damage = new Damage('health', amount, player, this, {
             type: 'elemental',
