@@ -2,6 +2,7 @@
 
 const { Broadcast, SkillType } = require('ranvier');
 const Combat = require('../../combat/lib/Combat');
+const {Random} = require("rando-js");
 
 // config placed here just for easy copy/paste of this skill later on
 const cooldown = 10;
@@ -9,9 +10,10 @@ const cost = 50;
 const duration = 20 * 1000;
 const tickInterval = 3;
 const damagePercent = 400;
+const total = Random.inRange(1, 100);
 
 const totalDamage = player => {
-  return Combat.getWeaponDamage(player, total, state) * (damagePercent / 100);
+  return Random.inRange(1,4);
 };
 
 
