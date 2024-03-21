@@ -10,6 +10,7 @@ const manaCost = 1;
  */
 module.exports = {
     name: 'Minor Shock',
+    number: 901,
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,

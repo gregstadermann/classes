@@ -66,7 +66,7 @@ module.exports = {
         },
         "armor_use": {
             "name": "Armor Use",
-            "cost":[14,0],
+            "cost":[15,0],
             "ranks": 0
         },
         "climbing": {
@@ -116,7 +116,7 @@ module.exports = {
         },
         "spell_aim": {
             "name": "Spell Aiming",
-            "cost":[2,1],
+            "cost":[3,1],
             "ranks": 0
         },
         "physical_training": {
@@ -136,16 +136,16 @@ module.exports = {
         },
         "magic_item_use": {
             "name": "Magic Item Use",
-            "cost":[0,1],
+            "cost":[0,2],
             "ranks": 0
         },
         "scroll_reading": {
             "name": "Scroll Reading",
-            "cost":[0,2],
+            "cost":[0,1],
             "ranks": 0
         },
-        "major_elemental": {
-            "name": "Major Elemental",
+        "minor_spiritual": {
+            "name": "Minor Spiritual",
             "cost":[0,8],
             "ranks": 0
         },
@@ -154,8 +154,8 @@ module.exports = {
             "cost":[0,8],
             "ranks": 0
         },
-        "wizard_base": {
-            "name": "Wizard Base",
+        "sorcerer_base": {
+            "name": "Sorcerer Base",
             "cost":[0,8],
             "ranks": 0
         },

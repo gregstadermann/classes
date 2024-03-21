@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * This example definition of a class file is a guideline. The class system is
- * left intentionally vague so as to not be too opinionated. Class files are
- * assumed to be js files instead of blank yaml files just to future proof the
- * bundle-loading of class files in case someone wants extra functionality in
- * their classes.
- */
 module.exports = {
     name: 'Empath',
     description: '',
@@ -26,17 +19,17 @@ module.exports = {
         },
         "one_handed_edged": {
             "name": "Edged Weapons",
-            "cost": [6,1],
+            "cost": [6,2],
             "ranks": 0
         },
         "one_handed_blunt": {
             "name": "Blunt Weapons",
-            "cost": [6,1],
+            "cost": [6,2],
             "ranks": 0
         },
         "two_handed": {
             "name": "Two-Handed Weapons",
-            "cost":[14,3],
+            "cost":[13,3],
             "ranks": 0
         },
         "polearm": {
@@ -51,7 +44,7 @@ module.exports = {
         },
         "thrown": {
             "name": "Thrown Weapons",
-            "cost":[8,2],
+            "cost":[9,3],
             "ranks": 0
         },
         "combat_maneuvers": {
@@ -66,7 +59,7 @@ module.exports = {
         },
         "armor_use": {
             "name": "Armor Use",
-            "cost":[14,0],
+            "cost":[15,0],
             "ranks": 0
         },
         "climbing": {
@@ -111,17 +104,17 @@ module.exports = {
         },
         "ambush": {
             "name": "Ambush",
-            "cost":[15,10],
+            "cost":[15,15],
             "ranks": 0
         },
         "spell_aim": {
             "name": "Spell Aiming",
-            "cost":[2,1],
+            "cost":[3,1],
             "ranks": 0
         },
         "physical_training": {
             "name": "Physical Training",
-            "cost":[8,0],
+            "cost":[2,0],
             "ranks": 0
         },
         "harness_power": {
@@ -136,7 +129,7 @@ module.exports = {
         },
         "magic_item_use": {
             "name": "Magic Item Use",
-            "cost":[0,1],
+            "cost":[0,2],
             "ranks": 0
         },
         "scroll_reading": {
@@ -154,14 +147,14 @@ module.exports = {
             "cost":[0,8],
             "ranks": 0
         },
-        "wizard_base": {
-            "name": "Wizard Base",
+        "empath_base": {
+            "name": "Empath Base",
             "cost":[0,8],
             "ranks": 0
         },
         "first_aid": {
             "name": "First Aid",
-            "cost":[2,1],
+            "cost":[1,0],
             "ranks": 0
         }
     },
