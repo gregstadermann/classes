@@ -76,6 +76,14 @@ module.exports = {
      * Handle player leveling up
      */
     level: state => function () {
+      let ptps = 25 + Math.floor((((this.getBaseAttribute('aura') + this.getBaseAttribute('discipline'))/2)+(this.getBaseAttribute('strength') + this.getBaseAttribute('constitution') + this.getBaseAttribute('dexterity') + this.getBaseAttribute('reflexes')))/20);
+      let mtps = 25 + Math.floor((((this.getBaseAttribute('aura') + this.getBaseAttribute('discipline'))/2)+(this.getBaseAttribute('intelligence') + this.getBaseAttribute('wisdom') + this.getBaseAttribute('logic') + this.getBaseAttribute('charisma')))/20);
+
+      this.tps[0] += (ptps);
+      this.tps[1] += (mtps);
+
+      B.sayAt(this, `<bold><green>You have gained ${ptps} physical training points and ${mtps} mental training points.</green></bold>`);
+      B.sayAt(this, '');
       const abilities = this.playerClass.abilityTable;
       if (!(this.level in this.playerClass.abilityTable)) {
         return;
